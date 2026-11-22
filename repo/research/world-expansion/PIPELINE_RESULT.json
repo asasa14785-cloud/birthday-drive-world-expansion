@@ -1,0 +1,244 @@
+{
+  "file": "birthday-drive/static/models/storybook/storybook-kit.glb",
+  "bytes": 2788620,
+  "totalTriangles": 35038,
+  "textures": [
+    {
+      "name": "Bark_NormalTree",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Leaves_NormalTree_C",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Leaf_Pine_C",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Bark_TwistedTree",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Leaves_TwistedTree_C",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Flowers",
+      "mime": "image/webp",
+      "size": [
+        512,
+        498
+      ]
+    },
+    {
+      "name": "Leaves",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Grass",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Mushrooms",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Rocks_Diffuse",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "PathRocks_Diffuse",
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "CommonTree_1",
+      "trisBefore": 6265,
+      "trisAfter": 4631,
+      "size": "3.94 x 7.2 x 3.94",
+      "minY": -0.24
+    },
+    {
+      "id": "CommonTree_2",
+      "trisBefore": 5648,
+      "trisAfter": 4470,
+      "size": "4.31 x 7.62 x 4.01",
+      "minY": -0.24
+    },
+    {
+      "id": "CommonTree_4",
+      "trisBefore": 4066,
+      "trisAfter": 3485,
+      "size": "3.83 x 9.4 x 3.76",
+      "minY": -0.24
+    },
+    {
+      "id": "Pine_1",
+      "trisBefore": 3947,
+      "trisAfter": 3388,
+      "size": "4.94 x 7.32 x 4.54",
+      "minY": -0.24
+    },
+    {
+      "id": "Pine_3",
+      "trisBefore": 4964,
+      "trisAfter": 4373,
+      "size": "3.61 x 7.39 x 4",
+      "minY": -0.24
+    },
+    {
+      "id": "TwistedTree_1",
+      "trisBefore": 9564,
+      "trisAfter": 7079,
+      "size": "13.13 x 15.48 x 9.43",
+      "minY": -0.2
+    },
+    {
+      "id": "Bush_Common",
+      "trisBefore": 900,
+      "trisAfter": 900,
+      "size": "1.91 x 1.58 x 1.97",
+      "minY": -0.23
+    },
+    {
+      "id": "Bush_Common_Flowers",
+      "trisBefore": 1368,
+      "trisAfter": 1243,
+      "size": "1.91 x 1.58 x 1.97",
+      "minY": -0.23
+    },
+    {
+      "id": "Flower_3_Group",
+      "trisBefore": 755,
+      "trisAfter": 467,
+      "size": "1.49 x 2.05 x 1.59",
+      "minY": -0.03
+    },
+    {
+      "id": "Flower_4_Group",
+      "trisBefore": 1690,
+      "trisAfter": 1014,
+      "size": "1.78 x 2.49 x 1.37",
+      "minY": -0.06
+    },
+    {
+      "id": "Grass_Common_Tall",
+      "trisBefore": 326,
+      "trisAfter": 326,
+      "size": "0.9 x 1.87 x 0.99",
+      "minY": -0.03
+    },
+    {
+      "id": "Grass_Wispy_Short",
+      "trisBefore": 494,
+      "trisAfter": 494,
+      "size": "1.32 x 1.07 x 1.21",
+      "minY": -0.09
+    },
+    {
+      "id": "Fern_1",
+      "trisBefore": 288,
+      "trisAfter": 172,
+      "size": "2.83 x 0.84 x 2.65",
+      "minY": -0.08
+    },
+    {
+      "id": "Clover_1",
+      "trisBefore": 379,
+      "trisAfter": 227,
+      "size": "0.8 x 1.14 x 0.76",
+      "minY": -0.01
+    },
+    {
+      "id": "Mushroom_Common",
+      "trisBefore": 880,
+      "trisAfter": 439,
+      "size": "0.56 x 0.46 x 0.78",
+      "minY": -0.02
+    },
+    {
+      "id": "Mushroom_Laetiporus",
+      "trisBefore": 3216,
+      "trisAfter": 1608,
+      "size": "1.37 x 0.77 x 1.1",
+      "minY": -0.16
+    },
+    {
+      "id": "Rock_Medium_1",
+      "trisBefore": 342,
+      "trisAfter": 342,
+      "size": "3.23 x 2.26 x 2.99",
+      "minY": -0.27
+    },
+    {
+      "id": "Rock_Medium_2",
+      "trisBefore": 244,
+      "trisAfter": 244,
+      "size": "3.05 x 1.9 x 2.48",
+      "minY": -0.05
+    },
+    {
+      "id": "Pebble_Round_1",
+      "trisBefore": 136,
+      "trisAfter": 136,
+      "size": "0.5 x 0.1 x 0.37",
+      "minY": -0.01
+    },
+    {
+      "id": "MC_GardenCottage",
+      "trisBefore": 0,
+      "trisAfter": 0,
+      "size": "2.32 x 2.9 x 2.79",
+      "minY": 0
+    },
+    {
+      "id": "MC_RouteSign",
+      "trisBefore": 0,
+      "trisAfter": 0,
+      "size": "0.99 x 1.72 x 0.22",
+      "minY": 0
+    }
+  ]
+}

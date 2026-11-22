@@ -1,0 +1,310 @@
+{
+ "name": "mobile-portrait",
+ "W": 390,
+ "H": 844,
+ "touch": true,
+ "quality": {
+  "tier": "mid",
+  "scale": 1,
+  "forced": "mid",
+  "lastAverageFrameMs": null,
+  "history": [
+   {
+    "tier": "mid",
+    "scale": 1,
+    "dpr": 1.5,
+    "reason": "initial",
+    "t": 198
+   }
+  ]
+ },
+ "emulation": "headless Chromium + SwiftShader software WebGL (NOT a real device)",
+ "steps": {
+  "world": {
+   "q": "mid",
+   "touchClass": true,
+   "hud": true,
+   "sound": true
+  },
+  "memories": [
+   {
+    "pos": [
+     -1.3999999999999995,
+     27.1
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle",
+      "idle"
+     ],
+     "tex": 23
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -1.3999999999999995,
+     36.9
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 25
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -13.1,
+     55.36
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 29
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -1.3999999999999995,
+     27.1
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 29
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -1.3999999999999995,
+     36.9
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 30
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -13.1,
+     55.36
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 30
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -24.9,
+     55.36
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded"
+     ],
+     "tex": 28
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -47.379999999999995,
+     65.1
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded"
+     ],
+     "tex": 30
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -47.379999999999995,
+     76.9
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded"
+     ],
+     "tex": 30
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   }
+  ],
+  "photo2": {
+   "idx": 1,
+   "status": "loaded"
+  },
+  "closeButton": "idle",
+  "finale": {
+   "state": "message"
+  },
+  "finale2": {
+   "state": "message",
+   "buttons": [
+    "✨ Replay",
+    "Keep exploring"
+   ]
+  },
+  "afterReplay": {
+   "state": "message",
+   "locked": true
+  }
+ },
+ "render": {
+  "calls": 1,
+  "triangles": 1,
+  "geometries": 136,
+  "textures": 35,
+  "programs": 16
+ },
+ "heap": {
+  "usedMB": 26.3
+ },
+ "consoleErrors": [],
+ "warnings": [
+  "warning: [birthday] audio unavailable: ./birthday/audio/01.mp3",
+  "warning: [birthday] audio unavailable: ./birthday/audio/01.mp3"
+ ],
+ "failedRequests": []
+}

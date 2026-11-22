@@ -1,0 +1,30 @@
+{
+ "carY": 0.8,
+ "finaleState1": "ready",
+ "finaleState2": "message",
+ "finaleState3": {
+  "s": "ready",
+  "locked": false
+ },
+ "tour": "0:8:idle:1 | 0:10:idle:1 | 0:15:idle:2 | 0:21:idle:2 | -1:26:idle:2 | -3:30:idle:2 | -3:32:idle:2 | -4:33:idle:2 | -4:34:opening:2 | -4:34:open:2 | -4:34:closing:2 | -4:34:idle:2 | -4:34:idle:3 | -4:34:idle:3",
+ "logs": [],
+ "touchDom": {
+  "zone": true,
+  "nipple": false,
+  "brake": true,
+  "nativeHidden": "none"
+ },
+ "dead": false,
+ "moved": {
+  "active": true,
+  "angle": 2.45
+ },
+ "released": false,
+ "scrollY": 0,
+ "lockedActive": {
+  "state": "open",
+  "active": false
+ },
+ "after": "idle",
+ "logs2": []
+}

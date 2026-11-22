@@ -1,0 +1,159 @@
+/* Birthday Drive UI — memory sheet, prompts, HUD, touch controls */
+:root
+{
+    --bd-pink: #f2a6ba;
+    --bd-deep: #c9577c;
+    --bd-ink: #4a2a38;
+    --bd-cream: #fff7ee;
+    --bd-gold: #ffd76a;
+    --bd-font: 'Comic Neue', 'Trebuchet MS', system-ui, sans-serif;
+}
+
+/* Bruno's Three.js Journey promo is not part of this product */
+.threejs-journey { display: none !important; }
+
+html, body { overscroll-behavior: none; }
+.bd-touch, .bd-touch body { touch-action: none; }
+
+.bd-chip, .bd-hud-btn, .bd-prompt, .bd-sheet, .bd-btn, .bd-touch-btn, .bd-welcome, .bd-hint, .bd-close
+{
+    font-family: var(--bd-font);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+/* ---------- HUD ---------- */
+.bd-hud
+{
+    position: fixed; top: max(12px, env(safe-area-inset-top)); left: 12px; right: 12px;
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+    pointer-events: none; z-index: 20;
+}
+.bd-chip
+{
+    pointer-events: none; padding: 8px 14px; border-radius: 999px; font-weight: 700; font-size: 15px;
+    color: var(--bd-ink); background: rgba(255, 247, 238, 0.92); box-shadow: 0 4px 14px rgba(120, 40, 70, 0.18);
+}
+.bd-heart { color: var(--bd-deep); }
+.bd-hud-buttons { display: flex; gap: 8px; pointer-events: auto; }
+.bd-hud-btn
+{
+    pointer-events: auto; cursor: pointer; border: 0; padding: 9px 15px; min-height: 40px; border-radius: 999px;
+    font-weight: 700; font-size: 15px; color: var(--bd-ink); background: rgba(255, 247, 238, 0.92);
+    box-shadow: 0 4px 14px rgba(120, 40, 70, 0.18); transition: transform .15s, background .15s;
+}
+.bd-hud-btn:hover { transform: translateY(-1px); background: #fff; }
+.bd-hud-btn[aria-pressed="true"] { background: var(--bd-deep); color: #fff; }
+.bd-touch .bd-reset-btn { display: none; }
+.bd-memory-open .bd-hud, .bd-memory-open .bd-hint, .bd-memory-open .bd-joystick, .bd-memory-open .bd-touch-btn { opacity: 0; pointer-events: none; }
+
+/* ---------- hint + welcome ---------- */
+.bd-hint
+{
+    position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 15;
+    max-width: calc(100vw - 24px); text-align: center; pointer-events: none;
+    padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 700;
+    color: var(--bd-ink); background: rgba(255, 247, 238, 0.85);
+}
+.bd-touch .bd-hint { bottom: auto; top: 62px; }
+.bd-welcome
+{
+    position: fixed; left: 50%; top: 22%; transform: translateX(-50%); z-index: 18; pointer-events: none;
+    text-align: center; width: min(92vw, 640px); color: #fff; text-shadow: 0 3px 0 var(--bd-deep), 0 8px 24px rgba(120, 40, 70, 0.45);
+}
+.bd-welcome h1 { margin: 0; font-family: var(--bd-font); font-size: clamp(30px, 6vw, 58px); line-height: 1.05; }
+.bd-welcome p { margin: 10px 0 0; font-family: var(--bd-font); font-size: clamp(15px, 2.4vw, 20px); font-weight: 700; }
+
+/* ---------- interaction prompt ---------- */
+.bd-prompt
+{
+    position: fixed; left: 50%; bottom: max(64px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 30;
+    display: flex; align-items: center; gap: 12px; padding: 12px 20px 12px 14px; border: 0; border-radius: 22px; cursor: pointer;
+    color: var(--bd-ink); background: var(--bd-cream); box-shadow: 0 10px 30px rgba(120, 40, 70, 0.3), 0 0 0 3px var(--bd-pink);
+    text-align: left; animation: bd-bob 1.8s ease-in-out infinite; max-width: calc(100vw - 24px);
+}
+.bd-prompt[hidden] { display: none; }
+.bd-prompt strong { display: block; font-size: 17px; }
+.bd-prompt small { display: block; font-size: 13px; opacity: .8; font-weight: 700; }
+.bd-prompt-icon { font-size: 28px; color: var(--bd-deep); }
+@keyframes bd-bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, -5px); } }
+
+/* ---------- memory sheet (the photograph itself is 3D) ---------- */
+.bd-memory { position: fixed; inset: 0; z-index: 40; pointer-events: none; }
+.bd-memory[hidden] { display: none; }
+.bd-close
+{
+    position: absolute; top: max(12px, env(safe-area-inset-top)); right: 12px; width: 48px; height: 48px; border-radius: 50%;
+    border: 0; font-size: 32px; line-height: 1; cursor: pointer; pointer-events: auto; color: var(--bd-ink);
+    background: var(--bd-cream); box-shadow: 0 6px 20px rgba(120, 40, 70, 0.35);
+}
+.bd-sheet
+{
+    position: absolute; left: 50%; bottom: max(14px, env(safe-area-inset-bottom)); width: min(94vw, 620px);
+    transform: translate(-50%, 24px); opacity: 0; pointer-events: auto; padding: 16px 20px 18px;
+    border-radius: 24px; color: var(--bd-ink); background: rgba(255, 247, 238, 0.96);
+    box-shadow: 0 16px 50px rgba(120, 40, 70, 0.35); transition: transform .5s cubic-bezier(.2, .9, .3, 1.1), opacity .4s;
+    max-height: 42vh; overflow: auto;
+}
+.is-visible .bd-sheet { transform: translate(-50%, 0); opacity: 1; }
+.bd-meta { display: flex; justify-content: space-between; gap: 10px; margin: 0 0 2px; font-size: 13px; font-weight: 700; color: var(--bd-deep); text-transform: uppercase; letter-spacing: .06em; }
+.bd-title { margin: 0; font-family: var(--bd-font); font-size: clamp(22px, 5vw, 30px); line-height: 1.1; }
+.bd-caption { margin: 6px 0 0; font-size: clamp(16px, 3.6vw, 19px); font-weight: 700; line-height: 1.35; opacity: .9; }
+.bd-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; }
+.bd-btn
+{
+    border: 0; cursor: pointer; min-height: 44px; min-width: 44px; padding: 0 16px; border-radius: 999px;
+    font-size: 16px; font-weight: 700; color: var(--bd-ink); background: #fde6ec; transition: transform .15s;
+}
+.bd-btn:hover { transform: translateY(-1px); }
+.bd-btn[disabled] { opacity: .55; cursor: default; }
+.bd-btn[hidden], .bd-caption[hidden], .bd-meta span[hidden] { display: none; }
+.bd-prev, .bd-next { font-size: 26px; line-height: 1; padding: 0 14px; }
+.bd-primary { margin-left: auto; color: #fff; background: var(--bd-deep); }
+.bd-sheet-final { text-align: center; max-height: 60vh; }
+.bd-sheet-final .bd-title { font-size: clamp(26px, 6.5vw, 40px); }
+.bd-sheet-final .bd-actions { justify-content: center; }
+.bd-sheet-final .bd-primary { margin-left: 0; }
+.bd-final .bd-meta { justify-content: center; }
+
+/* ---------- touch controls (NippleJS stick + buttons) ---------- */
+.bd-joystick
+{
+    position: fixed; left: max(14px, env(safe-area-inset-left)); bottom: max(14px, env(safe-area-inset-bottom));
+    width: 190px; height: 190px; z-index: 25; touch-action: none; user-select: none; -webkit-user-select: none;
+}
+.bd-touch-btn
+{
+    position: fixed; z-index: 25; border: 0; cursor: pointer; touch-action: none; font-weight: 700;
+    color: #fff; background: rgba(255, 255, 255, 0.22); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+.bd-brake { right: 108px; bottom: 28px; width: 76px; height: 76px; border-radius: 50%; font-size: 13px; letter-spacing: .04em; }
+.bd-brake.is-on { background: rgba(201, 87, 124, 0.85); }
+.bd-reset { left: 28px; bottom: 218px; width: 48px; height: 48px; border-radius: 50%; font-size: 24px; }
+
+@media (max-height: 520px)
+{
+    .bd-sheet { max-height: 56vh; padding: 10px 16px 12px; }
+    .bd-actions { margin-top: 8px; }
+    .bd-hint { display: none; }
+}
+@media (prefers-reduced-motion: reduce)
+{
+    .bd-prompt { animation: none; }
+    .bd-sheet { transition: opacity .2s; transform: translate(-50%, 0); }
+}
+
+/* ---------- Phase 3: long text safety, low-quality fallback vignette, polish ---------- */
+.bd-sheet .bd-title, .bd-sheet .bd-caption, .bd-sheet .bd-date, .bd-sheet p, .bd-sheet h2, .bd-sheet h3 { overflow-wrap: anywhere; hyphens: auto; }
+.bd-sheet { overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.bd-vignette
+{
+    display: none; position: fixed; inset: 0; z-index: 2; pointer-events: none;
+    background:
+        radial-gradient(120% 90% at 50% 105%, rgba(255, 207, 224, 0.55), rgba(255, 207, 224, 0) 62%),
+        radial-gradient(130% 110% at 50% 45%, rgba(0, 0, 0, 0) 55%, rgba(60, 20, 40, 0.28) 100%);
+}
+body.bd-touch { overscroll-behavior: none; touch-action: none; }
+.bd-close { min-width: 44px; min-height: 44px; }
+.bd-touch-btn { min-width: 56px; min-height: 56px; }
+.bd-sheet{touch-action:pan-y}

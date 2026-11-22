@@ -1,0 +1,315 @@
+{
+ "name": "desktop",
+ "W": 1440,
+ "H": 900,
+ "touch": false,
+ "quality": {
+  "tier": "high",
+  "scale": 1,
+  "forced": "high",
+  "lastAverageFrameMs": null,
+  "history": [
+   {
+    "tier": "high",
+    "scale": 1,
+    "dpr": 1,
+    "reason": "initial",
+    "t": 191
+   }
+  ]
+ },
+ "emulation": "headless Chromium + SwiftShader software WebGL (NOT a real device)",
+ "steps": {
+  "world": {
+   "q": "high",
+   "touchClass": false,
+   "hud": true,
+   "sound": true
+  },
+  "keyboardDrive": {
+   "y0": -0.019702164284000352,
+   "y1": 13.702186711820117,
+   "moved": true
+  },
+  "memories": [
+   {
+    "pos": [
+     -1.3999999999999995,
+     27.1
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle",
+      "idle"
+     ],
+     "tex": 27
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -1.3999999999999995,
+     36.9
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 27
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -13.1,
+     55.36
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -1.3999999999999995,
+     27.1
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -1.3999999999999995,
+     36.9
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -13.1,
+     55.36
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "idle",
+      "idle"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -24.9,
+     55.36
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -47.379999999999995,
+     65.1
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   },
+   {
+    "pos": [
+     -47.379999999999995,
+     76.9
+    ],
+    "near": {
+     "nearby": true,
+     "prompt": "bd-prompt"
+    },
+    "state": {
+     "state": "open",
+     "status": [
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded",
+      "loaded"
+     ],
+     "tex": 37
+    },
+    "after": {
+     "state": "idle",
+     "weight": 0,
+     "locked": false
+    }
+   }
+  ],
+  "photo2": {
+   "idx": 1,
+   "status": "loaded"
+  },
+  "closeButton": "idle",
+  "finale": {
+   "state": "message"
+  },
+  "finale2": {
+   "state": "message",
+   "buttons": [
+    "↻ Replay",
+    "Keep exploring"
+   ]
+  },
+  "afterReplay": {
+   "state": "message",
+   "locked": true
+  }
+ },
+ "render": {
+  "calls": 1,
+  "triangles": 1,
+  "geometries": 139,
+  "textures": 36,
+  "programs": 17
+ },
+ "heap": {
+  "usedMB": 22
+ },
+ "consoleErrors": [],
+ "warnings": [
+  "warning: [birthday] audio unavailable: ./birthday/audio/01.mp3",
+  "warning: [birthday] audio unavailable: ./birthday/audio/01.mp3"
+ ],
+ "failedRequests": []
+}

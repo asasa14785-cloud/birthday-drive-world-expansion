@@ -1,0 +1,8 @@
+# MEMORY SYSTEM
+Files: `src/javascript/Birthday/{MemoryStation,MemoryViewer,config}.js`.
+
+**MemoryStation** (reusable): frame from 6 shared unit meshes (back, 4 bars, posts) resized per photo aspect (no per-frame geometry), real photo `MeshBasicMaterial.map`, zone decoration, one static collider, one Bruno `Area` trigger. API: `ensureLoaded()`, `setPhoto(i)`, `unload()`, `dispose()`, `getFocus()`.
+**Textures**: loaded lazily within 38 units, freed beyond 70 (`unload`), freed on `setPhoto` (old texture disposed first), invalidated by a load token so late callbacks cannot leak. Failure → generated "Photo unavailable" card; placeholder card while loading.
+**MemoryViewer** state machine `idle → opening → open → closing → idle`; `open()` ignored unless idle and after a 700 ms cooldown; Close during `opening` is queued. While not idle `controls.birthdayLocked` = true (accessors report no input + brake; joystick reports inactive). Camera: save angle/zoom/minDistance/pan/blur → GSAP timeline on `camera.focus`, `camera.angle.value`, `camera.zoom.minDistance` → restore exactly. Distance is computed from photo size, FOV and viewport aspect (mobile portrait zooms out). Keys: Enter/Esc close, ←/→ photos, E opens. Buttons: ×, Keep driving, ‹ ›, audio. `prefers-reduced-motion` → near-zero durations, no pop. Optional audio uses Howler (already a dependency); load error → button shows "Audio unavailable", memory unaffected.
+Sequence: approach → prompt → stop → camera → reveal → caption/audio → close → drive.
+Known limits: photo plane is not click-through (UI only), one active memory at a time, 3 slots per zone (extra stations are skipped with a warning).

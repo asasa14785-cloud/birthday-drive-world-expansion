@@ -1,0 +1,80 @@
+{
+  "recipient": "Sara",
+  "sender": "From Someone Special",
+  "carColor": "#F2A6BA",
+  "welcome": "A World Made for You",
+  "theme": {
+    "floorTopLeft": "#f6c6d0",
+    "floorTopRight": "#fbd5c4",
+    "floorBottomRight": "#fff1d6",
+    "floorBottomLeft": "#f3b9c9",
+    "accent": "#F2A6BA",
+    "gold": "#ffd76a"
+  },
+  "cake": {
+    "shape": "tiered",
+    "tiers": 2,
+    "frosting": "#fff3f6",
+    "sponge": "#F2A6BA",
+    "candles": 7,
+    "candleColor": "",
+    "topper": "Sara"
+  },
+  "stations": [
+    {
+      "id": "memory-01",
+      "zone": "childhood",
+      "title": "The Beginning",
+      "photo": "/birthday/photos/01.webp",
+      "caption": "Our first memories",
+      "date": "Summer, long ago",
+      "audio": null
+    },
+    {
+      "id": "memory-02",
+      "zone": "childhood",
+      "title": "Garden Days",
+      "photos": [
+        { "src": "/birthday/photos/06.webp", "caption": "Balloons for no reason at all" },
+        { "src": "/birthday/photos/03.webp", "caption": "Lemonade and long afternoons" }
+      ],
+      "caption": "Small moments that became big ones",
+      "audio": null
+    },
+    {
+      "id": "memory-03",
+      "zone": "friends",
+      "title": "Our People",
+      "photo": "/birthday/photos/02.webp",
+      "caption": "The best moments",
+      "date": "Golden hour",
+      "audio": "/birthday/audio/01.mp3"
+    },
+    {
+      "id": "memory-04",
+      "zone": "friends",
+      "title": "Table for Everyone",
+      "photo": "/birthday/photos/03.webp",
+      "caption": "There is always room for one more chair"
+    },
+    {
+      "id": "memory-05",
+      "zone": "landmarks",
+      "title": "A Thousand Lanterns",
+      "photo": "/birthday/photos/04.webp",
+      "caption": "The night the sky felt close enough to touch",
+      "date": "One unforgettable night"
+    },
+    {
+      "id": "memory-06",
+      "zone": "landmarks",
+      "title": "Footprints",
+      "photo": "/birthday/photos/05.webp",
+      "caption": "Wherever you walk, you leave something beautiful"
+    }
+  ],
+  "finale": {
+    "title": "Happy Birthday Sara",
+    "message": "A world made from our memories."
+  }
+}
